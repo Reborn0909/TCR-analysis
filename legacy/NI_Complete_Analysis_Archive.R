@@ -16,7 +16,7 @@ library(tibble)
 library(pheatmap)
 library(grid)
 
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 out_base <- "DATA_ROOT"
 dir.create(out_base, recursive = TRUE, showWarnings = FALSE)
 theme_set(theme_minimal(base_size = 14))
