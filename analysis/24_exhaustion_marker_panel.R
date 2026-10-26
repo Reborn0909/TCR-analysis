@@ -4,7 +4,7 @@
 
 
 suppressPackageStartupMessages({library(Seurat); library(ggplot2); library(dplyr); library(tidyr)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/exhaustion"; dir.create(OUT, recursive=TRUE, showWarnings=FALSE)
 
 
@@ -16,7 +16,7 @@ PANEL <- list(
   "Memory / progenitor (reference)" = c("TCF7","SELL","CCR7","IL7R","LEF1"))
 ALLG <- unique(unlist(PANEL))
 
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$group <- factor(o$group, levels=c("H-Trp","E-Trp","E-DP"))
 o$donor <- ifelse(grepl("-1$", as.character(o$sample)), "Donor 1", "Donor 2")
 cat("  :", ncol(o), "\n")
