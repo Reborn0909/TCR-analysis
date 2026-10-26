@@ -7,7 +7,7 @@
 suppressPackageStartupMessages({
   library(Seurat); library(ggplot2); library(patchwork); library(dplyr)
 })
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/featureplot_yellow"; dir.create(OUT, recursive=TRUE, showWarnings=FALSE)
 
 
@@ -35,7 +35,7 @@ save_panel <- function(p, name, w, h) {
 }
 
 cat(" …\n")
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 
 
 fp <- function(genes, name, title, ncol=4, w=7.2, h=NULL) {
