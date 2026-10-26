@@ -14,14 +14,14 @@ PAL = {"SS": "#8FA9B8", "Pre-sel": "#C08A8A", "Post-sel": "#D0A97E"}
 PANELS = [("Exhaustion", "Exhaustion Signature"),
           ("Activation_effector_function", "Activation / Effector Signature"),
           ("Cytotoxicity", "Cytotoxicity Signature")]
-YLO, YHI = -1.0, 2.0          
+YLO, YHI = -1.0, 2.0
 
 plt.rcParams.update({
     "font.family": "Helvetica", "font.size": 9,
     "axes.linewidth": 0.7, "xtick.major.width": 0.7, "ytick.major.width": 0.7,
     "xtick.major.size": 3.0, "ytick.major.size": 3.0,
 })
-FIG_W, FIG_H = 3.5, 3.5/(456/708)   
+FIG_W, FIG_H = 3.5, 3.5/(456/708)
 fig, axes = plt.subplots(3, 1, figsize=(FIG_W, FIG_H), sharey=True,
                          constrained_layout=True)
 
@@ -29,8 +29,7 @@ def bracket(ax, x1, x2, y, h, text, fs=9):
     ax.plot([x1, x1, x2, x2], [y, y+h, y+h, y], lw=0.8, c="black", clip_on=False)
     ax.text((x1+x2)/2, y+h, text, ha="center", va="bottom", fontsize=fs)
 
-
-STEPS = [(1, 2, 1.14), (2, 3, 1.34), (1, 3, 1.56)]   
+STEPS = [(1, 2, 1.14), (2, 3, 1.34), (1, 3, 1.56)]
 
 for ax, (col, title) in zip(axes, PANELS):
     data = [df.loc[df["group"] == g, col].dropna().values for g in GROUPS]
@@ -52,13 +51,13 @@ for ax, (col, title) in zip(axes, PANELS):
     ax.set_axisbelow(True)
     for s in ("top", "right"): ax.spines[s].set_visible(False)
     ax.set_xlim(0.45, 3.55)
-    ax.set_ylim(YLO, YHI)                       
-    ax.set_yticks([-1, 0, 1, 2])                      
+    ax.set_ylim(YLO, YHI)
+    ax.set_yticks([-1, 0, 1, 2])
     ax.set_yticklabels(["-1", "0", "1", "2"], fontsize=9.5)
-    a = 0.5                                     
+    a = 0.5
     for x1, x2, y in STEPS:
         bracket(ax, x1, x2, y, 0.035, "****", fs=9)
 
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}.{ext}", dpi=600 if ext == "png" else None)
-print(f" → {OUT}.pdf / .png  (figsize {FIG_W:.2f}×{FIG_H:.2f} in =  {FIG_W/FIG_H:.4f}, ylim {YLO}~{YHI})")
+print(f"  {OUT}.pdf / .png  (figsize {FIG_W:.2f}{FIG_H:.2f} in =  {FIG_W/FIG_H:.4f}, ylim {YLO}~{YHI})")
