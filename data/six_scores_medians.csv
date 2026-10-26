@@ -1,0 +1,7 @@
+module,score_column,H_Trp_SS,E_Trp_Pre,E_DP_Post,source_object
+Exhaustion Signature,Exhaustion_Full1,-0.169,-0.126,-0.209,seurat_with_TCR_signatures_original.rds
+Activation / Effector Signature,Activation_computed,0.409,-0.086,-0.163,seurat_with_TCR_signatures_original.rds
+Cytotoxicity Signature,Cytotoxicity_computed,0.292,-0.115,-0.227,seurat_with_TCR_signatures_original.rds
+Stemness Signature,Stemness_Score1,-0.360,-0.681,-0.287,seurat_with_TCR_signatures_original.rds
+CD8Trp Signature,CD8_Trp_Score1,0.085,-0.285,0.114,seurat_with_TCR_signatures_original.rds
+Regulatory Signature,CD8_Treg1,-0.429,0.155,-0.309,seurat_with_TCR_signatures_original.rds
