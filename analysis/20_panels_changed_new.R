@@ -14,7 +14,7 @@ font_add("msyh", regular = "C:/Windows/Fonts/msyh.ttc",
                   bold    = "C:/Windows/Fonts/msyhbd.ttc")
 showtext_auto()
 showtext_opts(dpi = 600)
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 RES <- "results"; OUT <- "figures/panels"
 dir.create(OUT, recursive = TRUE, showWarnings = FALSE)
 
