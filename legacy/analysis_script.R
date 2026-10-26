@@ -9,7 +9,7 @@
 
 
 
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 
 
 dir.create("data", showWarnings = FALSE)
@@ -65,7 +65,7 @@ files_to_download <- c(
 )
 
 
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 
 
 
