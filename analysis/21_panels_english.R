@@ -7,7 +7,7 @@ suppressPackageStartupMessages({
   library(ggplot2); library(dplyr); library(tidyr); library(readr)
   library(scales); library(grid)
 })
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 RES <- "results"; OUT <- "figures/panels_en"
 dir.create(OUT, recursive = TRUE, showWarnings = FALSE)
 
