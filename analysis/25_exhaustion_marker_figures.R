@@ -3,7 +3,7 @@
 
 
 suppressPackageStartupMessages({library(ggplot2); library(dplyr); library(tidyr); library(readr)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/exhaustion"
 group_colors <- c("E-DP"="#C8956B", "E-Trp"="#B05A5A", "H-Trp"="#6B8E9B")
 sample_colors <- c("E-CD8DP-1"="#C8956B","E-CD8DP-2"="#D9AE8A","E-CD8Trp-1"="#B05A5A",
