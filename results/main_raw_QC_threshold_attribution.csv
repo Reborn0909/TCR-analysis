@@ -1,0 +1,7 @@
+sample,pre_QC_barcodes,post_QC_cells,removed_by_nFeature_low(<=200),removed_by_nFeature_high(>=10000),removed_by_nCount_high(>=80000),removed_by_percent_mt(>=10),removed_by_percent_HB(>=0.35)
+E-CD8DP-1,17599,13119,0,0,172,4308,0
+E-CD8DP-2,15556,13738,0,0,39,1779,0
+E-CD8Trp-1,15516,11951,0,0,15,3550,0
+E-CD8Trp-2,15243,13662,0,0,0,1581,0
+H-CD8Trp-1,14055,13442,0,0,0,613,0
+H-CD8Trp-2,11604,10454,1,0,0,1150,0
