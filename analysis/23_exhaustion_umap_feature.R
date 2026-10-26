@@ -11,7 +11,7 @@ suppressPackageStartupMessages({
   library(Seurat); library(ggplot2); library(patchwork); library(dplyr)
   library(ggrastr)
 })
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/exhaustion"; dir.create(OUT, recursive=TRUE, showWarnings=FALSE)
 
 
@@ -44,7 +44,7 @@ save_panel <- function(p, name, w=4.2, h=3.1) {
 
 
 cat(" seurat_filtered_newQC.rds …\n")
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$sample <- factor(o$sample, levels = SAMP)
 o$group  <- factor(o$group,  levels = c("H-Trp","E-Trp","E-DP"))
 o$donor  <- factor(ifelse(grepl("-1$", as.character(o$sample)), "Donor 1", "Donor 2"),
