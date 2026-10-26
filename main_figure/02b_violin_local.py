@@ -49,4 +49,4 @@ for ax, (col, title) in zip(axes, PANELS):
 
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}.{ext}", dpi=600 if ext == "png" else None)
-print(f" → {OUT}.pdf / .png")
+print(f"  {OUT}.pdf / .png")
