@@ -3,7 +3,7 @@
 
 
 
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 
 
 dir.create("data", showWarnings = FALSE)
@@ -79,4 +79,4 @@ for (file in files_to_download) {
 cat("\n")
 
 
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
