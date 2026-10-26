@@ -1,0 +1,9 @@
+"donor","clonotype_definition","comparison","raw_delta","downsample_delta","direction_preserved"
+"Donor1","CTgene","E-Trp vs H-Trp",2.28179823429157,2.21831584898423,TRUE
+"Donor1","CTgene","E-DP vs E-Trp",0.882784501712924,0.699036630623628,TRUE
+"Donor2","CTgene","E-Trp vs H-Trp",1.48221486879601,1.26298159528912,TRUE
+"Donor2","CTgene","E-DP vs E-Trp",0.868166624084409,0.59405454937705,TRUE
+"Donor1","CTstrict","E-Trp vs H-Trp",2.3162644103888,2.24661599422805,TRUE
+"Donor1","CTstrict","E-DP vs E-Trp",0.796014824305042,0.617666271653989,TRUE
+"Donor2","CTstrict","E-Trp vs H-Trp",1.26789447094553,1.03411525723103,TRUE
+"Donor2","CTstrict","E-DP vs E-Trp",0.833336851386688,0.561442338933041,TRUE
