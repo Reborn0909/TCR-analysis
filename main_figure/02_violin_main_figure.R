@@ -8,7 +8,7 @@ suppressPackageStartupMessages({
   library(data.table); library(ggplot2); library(ggsignif); library(patchwork)
 })
 
-OUT <- Sys.getenv("GHD_OUT", "/mnt/f// for GHD/main_figure")
+OUT <- Sys.getenv("SCORES_DIR", "data")
 IN  <- file.path(OUT, "per_cell_scores.csv.gz")
 if (!file.exists(IN)) stop(" per_cell_scores.csv.gz， 01_extract_scores.R")
 
