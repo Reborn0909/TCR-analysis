@@ -4,7 +4,7 @@
 
 
 suppressPackageStartupMessages({library(ggplot2); library(readr); library(dplyr)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/panels_en"
 RAMP <- c("#D4CFC5", "#B5C1B4", "#8C5A5A")
 SAMP <- c("H-CD8Trp-1","E-CD8Trp-1","E-CD8DP-1","H-CD8Trp-2","E-CD8Trp-2","E-CD8DP-2")
