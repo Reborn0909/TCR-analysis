@@ -8,7 +8,7 @@
 
 
 suppressPackageStartupMessages({library(Seurat); library(Matrix); library(dplyr); library(tidyr)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 
 PANELS <- list(
  "Exhaustion" = c("PDCD1","LAYN","HAVCR2","LAG3","CD244","CTLA4","LILRB1","TIGIT",
@@ -23,7 +23,7 @@ PANELS <- list(
                   "CST7","CSTB","LAMP1","LAMP3","CAPN2"))
 ALLG <- unique(unlist(PANELS))
 
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$group <- factor(o$group, levels=c("H-Trp","E-Trp","E-DP"))
 o$donor <- unname(ifelse(grepl("-1$", as.character(o$sample)), "Donor 1", "Donor 2"))
 cat("  :", ncol(o), " ·  assay:", DefaultAssay(o), "\n")
