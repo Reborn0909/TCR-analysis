@@ -1,0 +1,88 @@
+module,score_column,gene_index,gene,provenance
+Exhaustion Signature,Exhaustion_Full1,1,PDCD1,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Exhaustion Signature,Exhaustion_Full1,2,HAVCR2,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Exhaustion Signature,Exhaustion_Full1,3,LAG3,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Exhaustion Signature,Exhaustion_Full1,4,TIGIT,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Exhaustion Signature,Exhaustion_Full1,5,CTLA4,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Exhaustion Signature,Exhaustion_Full1,6,TOX,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Exhaustion Signature,Exhaustion_Full1,7,TOX2,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Activation / Effector Signature,Activation_computed,1,FAS,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,2,FASLG,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,3,CD44,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,4,CD69,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,5,CD38,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,6,NKG7,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,7,KLRB1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,8,KLRD1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,9,KLRF1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,10,KLRG1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,11,KLRK1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,12,FCGR3A,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,13,CX3CR1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,14,CD300A,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,15,FGFBP2,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,16,ID2,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,17,ID3,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,18,PRDM1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,19,RUNX3,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,20,TBX21,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,21,ZEB2,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,22,BATF,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,23,IRF4,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,24,NR4A1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,25,NR4A2,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,26,NR4A3,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,27,PBX3,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,28,ZNF683,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,29,HOPX,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,30,FOS,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,31,FOSB,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,32,JUN,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,33,JUNB,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,34,JUND,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,35,STAT1,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,36,STAT2,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,37,STAT5A,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,38,STAT6,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,39,STAT4,"AddModuleScore, 40-gene panel from the original analysis"
+Activation / Effector Signature,Activation_computed,40,EOMES,"AddModuleScore, 40-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,1,GZMA,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,2,GZMB,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,3,GZMH,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,4,GZMK,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,5,GNLY,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,6,PRF1,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,7,IFNG,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,8,TNF,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,9,SERPINB1,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,10,SERPINB6,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,11,SERPINB9,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,12,CTSA,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,13,CTSB,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,14,CTSC,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,15,CTSD,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,16,CTSW,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,17,CST3,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,18,CST7,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,19,CSTB,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,20,LAMP1,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,21,LAMP3,"AddModuleScore, 22-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,22,CAPN2,"AddModuleScore, 22-gene panel from the original analysis"
+Stemness Signature,Stemness_Score1,1,TCF7,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+Stemness Signature,Stemness_Score1,2,LEF1,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+Stemness Signature,Stemness_Score1,3,SELL,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+Stemness Signature,Stemness_Score1,4,CCR7,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+Stemness Signature,Stemness_Score1,5,CD27,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+Stemness Signature,Stemness_Score1,6,IL7R,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+Stemness Signature,Stemness_Score1,7,CD28,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+CD8Trp Signature,CD8_Trp_Score1,1,HLA-DRA,"Guo et al., Advanced Science 2024 core CD8 Trp signature (5 genes). Source: logs/main_signature_history_extract.txt line 1054"
+CD8Trp Signature,CD8_Trp_Score1,2,HLA-DRB1,"Guo et al., Advanced Science 2024 core CD8 Trp signature (5 genes). Source: logs/main_signature_history_extract.txt line 1054"
+CD8Trp Signature,CD8_Trp_Score1,3,TIGIT,"Guo et al., Advanced Science 2024 core CD8 Trp signature (5 genes). Source: logs/main_signature_history_extract.txt line 1054"
+CD8Trp Signature,CD8_Trp_Score1,4,LAG3,"Guo et al., Advanced Science 2024 core CD8 Trp signature (5 genes). Source: logs/main_signature_history_extract.txt line 1054"
+CD8Trp Signature,CD8_Trp_Score1,5,CD74,"Guo et al., Advanced Science 2024 core CD8 Trp signature (5 genes). Source: logs/main_signature_history_extract.txt line 1054"
+Regulatory Signature,CD8_Treg1,1,FOXP3,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
+Regulatory Signature,CD8_Treg1,2,IL2RA,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
+Regulatory Signature,CD8_Treg1,3,CTLA4,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
+Regulatory Signature,CD8_Treg1,4,TIGIT,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
+Regulatory Signature,CD8_Treg1,5,IKZF2,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
+Regulatory Signature,CD8_Treg1,6,LAG3,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
