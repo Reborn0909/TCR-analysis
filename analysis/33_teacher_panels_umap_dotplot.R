@@ -8,7 +8,7 @@
 
 
 suppressPackageStartupMessages({library(Seurat); library(ggplot2); library(dplyr); library(tidyr); library(patchwork)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/teacher_panels_umap_dot"; dir.create(OUT, recursive=TRUE, showWarnings=FALSE)
 
 PANELS <- list(
@@ -31,7 +31,7 @@ DON_COLORS   <- c("Donor 1"="#C8956B", "Donor 2"="#6B8E9B")
 MORANDI_RAMP <- c("#D4CFC5","#B5C1B4","#8C5A5A")
 YELLOW_RAMP  <- c("#FFFDE7","#FFF9C4","#FFE082","#FFC107","#FF8F00")
 
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$group <- factor(o$group, levels=GRP)
 o$donor <- unname(ifelse(grepl("-1$", as.character(o$sample)), "Donor 1", "Donor 2"))
 o$dc    <- factor(paste(o$donor, as.character(o$group), sep=" / "),
