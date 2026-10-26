@@ -1,5 +1,5 @@
-## Depth-matched TCR diversity: does the SS -> Pre-sel -> Post-sel increase
-## survive when every sample is held to the same per-cell VDJ depth?
+
+
 ITER <- 2000; SEED <- 20261004
 D <- "/tmp/ghd_productive/downstream_clean"
 out <- "/tmp/ghd_productive/depth_matched"
