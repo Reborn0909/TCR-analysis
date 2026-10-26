@@ -3,8 +3,8 @@
 suppressPackageStartupMessages({ library(SeuratObject); library(data.table) })
 set.seed(20261004)
 
-OBJ <- Sys.getenv("GHD_OBJECT", "/mnt/f// for GHD/seurat_filtered_newQC.rds")
-OUT <- Sys.getenv("GHD_OUT", "/mnt/f// for GHD/main_figure")
+OBJ <- Sys.getenv("OBJECT", file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
+OUT <- Sys.getenv("SCORES_DIR", "data")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 msg <- function(...) cat(format(Sys.time(), "%H:%M:%S"), "|", ..., "\n"); flush.console()
 
