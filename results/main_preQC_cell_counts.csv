@@ -1,0 +1,7 @@
+sample,pre_QC_cells,post_QC_cells,removed_by_QC,pct_removed,postQC_subset_of_matrix,evidence_path,barcodes_sha256,source
+E-CD8DP-1,17599,13119,4480,25.46,True,F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5/run_count_E-CD8DP-1-10X5/filtered_feature_bc_matrix/barcodes.tsv.gz,8f85065f0b985ec0c1509d1159c9cded,J: GHD_DATA1 / CD8Trp / Trp_10X5
+E-CD8DP-2,15556,13738,1818,11.69,True,F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5/run_count_E-CD8DP-2-10X5/filtered_feature_bc_matrix/barcodes.tsv.gz,d78678142c9dbb46a08de894e1efece5,J: GHD_DATA1 / CD8Trp / Trp_10X5
+E-CD8Trp-1,15516,11951,3565,22.98,True,F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5/run_count_E-CD8Trp-1-10X5/filtered_feature_bc_matrix/barcodes.tsv.gz,bdb1ea124cc6a9f190dd17d1e1ec0bb4,J: GHD_DATA1 / CD8Trp / Trp_10X5
+E-CD8Trp-2,15243,13662,1581,10.37,True,F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5/run_count_E-CD8Trp-2-10X5/filtered_feature_bc_matrix/barcodes.tsv.gz,d8b498fa8b5dd496e99b8c33c1bc12a8,J: GHD_DATA1 / CD8Trp / Trp_10X5
+H-CD8Trp-1,14055,13442,613,4.36,True,F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5/run_count_H-CD8Trp-1-10X5/filtered_feature_bc_matrix/barcodes.tsv.gz,8f5d7936181f9cf0b1f4ad44764a3814,J: GHD_DATA1 / CD8Trp / Trp_10X5
+H-CD8Trp-2,11604,10454,1150,9.91,True,F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5/run_count_H-CD8Trp-2-10X5/filtered_feature_bc_matrix/barcodes.tsv.gz,8b507917f5fcc8b164185c1628440bf6,J: GHD_DATA1 / CD8Trp / Trp_10X5
