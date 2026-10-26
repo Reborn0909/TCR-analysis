@@ -13,6 +13,7 @@ by `DATA_ROOT`; the computational logic is untouched.
 ```
 analysis/       26 original R scripts, the analysis pipeline
 main_figure/     5 original scripts for the main figure
+legacy/          3 original scripts from the earlier analysis round
 data/            result tables and signature gene sets
 figures/         figures
 original/        source inventory (signature gene lists)
@@ -81,8 +82,8 @@ build the six-signature violin figure from the per-cell module scores.
 
 ## Signature definitions
 
-`data/signature_gene_sets.csv` — the six main-figure signatures.
-`data/signature_gene_sets_ten.csv` — all ten signatures, extracted from
+`data/signature_gene_sets.csv`  the six main-figure signatures.
+`data/signature_gene_sets_ten.csv`  all ten signatures, extracted from
 `original/Table_Signature_Gene_Lists.xlsx`.
 
 The CD8 Trp signature is the five-gene core set HLA-DRA, HLA-DRB1, TIGIT,
@@ -116,3 +117,18 @@ and are not used for any claim of donor-level significance.
 ```bash
 sha256sum -c MANIFEST_SHA256.csv
 ```
+
+## Legacy scripts
+
+`legacy/` holds three scripts from the earlier analysis round, moved here
+unchanged apart from comment removal and path anonymisation.
+
+| Script | Lines | Purpose |
+|---|---|---|
+| `analysis_script.R` | 386 | full pipeline: read objects, compute module scores, draw panels |
+| `NI_Complete_Analysis_Archive.R` | 481 | complete analysis archive for the second cohort |
+| `CD8_analysis.R` | 81 | CD8 subset analysis |
+
+Two further files from that round, `TCR_newQC.R` and `TCR_analysis_plots.R`,
+are R console transcripts rather than source files and are therefore not
+included; they would not parse as R code.
