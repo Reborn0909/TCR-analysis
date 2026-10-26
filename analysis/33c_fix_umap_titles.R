@@ -1,7 +1,7 @@
 
 
 suppressPackageStartupMessages({library(Seurat); library(ggplot2); library(dplyr); library(patchwork)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/teacher_panels_umap_dot"
 PANELS <- list(
  "Exhaustion" = c("PDCD1","LAYN","HAVCR2","LAG3","CD244","CTLA4","LILRB1","TIGIT","TOX","VSIR","BTLA","ENTPD1","CD160","LAIR1"),
@@ -11,7 +11,7 @@ GRP <- c("H-Trp","E-Trp","E-DP")
 YELLOW <- c("#FFFDE7","#FFF9C4","#FFE082","#FFC107","#FF8F00")
 tag <- c("Exhaustion"="exhaustion","Activation / effector function"="activation_effector","Cytotoxicity"="cytotoxicity")
 
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$group <- factor(o$group, levels=GRP)
 emb  <- Embeddings(o, "umap")
 expr <- FetchData(o, vars=unique(unlist(PANELS)), layer="data")
