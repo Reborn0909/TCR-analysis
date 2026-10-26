@@ -12,7 +12,7 @@
 
 
 suppressPackageStartupMessages({library(Matrix); library(Seurat); library(FNN)})
-ROOT <- "F:/GHD_Jpan_20261007/Trp_10X5/Trp_10X5"
+ROOT <- "F:/Jpan_20261007/Trp_10X5/Trp_10X5"
 SAMPLES <- c("E-CD8DP-1","E-CD8DP-2","E-CD8Trp-1","E-CD8Trp-2","H-CD8Trp-1","H-CD8Trp-2")
 set.seed(20261008)
 N_SIM <- 1500; NPC <- 30; K <- 30
