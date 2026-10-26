@@ -1,7 +1,7 @@
 
 suppressPackageStartupMessages({library(Seurat); library(Matrix)})
-setwd("DATA_ROOT")
-o <- readRDS("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$donor <- unname(ifelse(grepl("-1$", as.character(o$sample)), "Donor 1", "Donor 2"))
 cat("  :", ncol(o), "· :", paste(sprintf("%s %.3f", names(table(o$donor)), as.numeric(table(o$donor))/ncol(o)), collapse=" | "), "\n")
 for (gn in names(o@graphs)) {
