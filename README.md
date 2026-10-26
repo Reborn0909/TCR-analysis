@@ -112,6 +112,13 @@ Two donors. The donor is the biological replicate, so all inference is
 donor-level. Cell-level P values printed on the violin plots are descriptive
 and are not used for any claim of donor-level significance.
 
+## What runs
+
+See `RUNNABLE.md` for a per-script record of what each one needs and what was
+verified to run with the data included here. Three scripts run end to end from
+this repository alone; the rest need the parent Seurat object, which is not
+distributed because it is 2.48 GB.
+
 ## Integrity
 
 ```bash
