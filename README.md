@@ -13,7 +13,7 @@ by `DATA_ROOT`; the computational logic is untouched.
 ```
 analysis/       26 original R scripts, the analysis pipeline
 main_figure/     5 original scripts for the main figure
-legacy/          3 original scripts from the earlier analysis round
+legacy/          4 original scripts from the earlier analysis round
 data/            result tables and signature gene sets
 figures/         figures
 original/        source inventory (signature gene lists)
@@ -128,6 +128,7 @@ unchanged apart from comment removal and path anonymisation.
 | `analysis_script.R` | 386 | full pipeline: read objects, compute module scores, draw panels |
 | `NI_Complete_Analysis_Archive.R` | 481 | complete analysis archive for the second cohort |
 | `CD8_analysis.R` | 81 | CD8 subset analysis |
+| `TCR_analysis.R` | 569 | TCR plotting: Morandi palette, publication theme, 12 ggsave calls |
 
 Two further files from that round, `TCR_newQC.R` and `TCR_analysis_plots.R`,
 are R console transcripts rather than source files and are therefore not
