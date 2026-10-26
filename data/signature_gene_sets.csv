@@ -1,0 +1,7 @@
+module,score_column,n_genes,genes_semicolon_separated,provenance
+Exhaustion Signature,Exhaustion_Full1,7,PDCD1;HAVCR2;LAG3;TIGIT;CTLA4;TOX;TOX2,Legacy metadata column Exhaustion_Full1 (seurat_with_TCR_signatures_original.rds)
+Activation / Effector Signature,Activation_computed,40,FAS;FASLG;CD44;CD69;CD38;NKG7;KLRB1;KLRD1;KLRF1;KLRG1;KLRK1;FCGR3A;CX3CR1;CD300A;FGFBP2;ID2;ID3;PRDM1;RUNX3;TBX21;ZEB2;BATF;IRF4;NR4A1;NR4A2;NR4A3;PBX3;ZNF683;HOPX;FOS;FOSB;JUN;JUNB;JUND;STAT1;STAT2;STAT5A;STAT6;STAT4;EOMES,"AddModuleScore, 40-gene panel from the original analysis"
+Cytotoxicity Signature,Cytotoxicity_computed,22,GZMA;GZMB;GZMH;GZMK;GNLY;PRF1;IFNG;TNF;SERPINB1;SERPINB6;SERPINB9;CTSA;CTSB;CTSC;CTSD;CTSW;CST3;CST7;CSTB;LAMP1;LAMP3;CAPN2,"AddModuleScore, 22-gene panel from the original analysis"
+Stemness Signature,Stemness_Score1,7,TCF7;LEF1;SELL;CCR7;CD27;IL7R;CD28,Legacy metadata column Stemness_Score1 (seurat_with_TCR_signatures_original.rds)
+CD8Trp Signature,CD8_Trp_Score1,5,HLA-DRA;HLA-DRB1;TIGIT;LAG3;CD74,"Guo et al., Advanced Science 2024 core CD8 Trp signature (5 genes). Source: logs/main_signature_history_extract.txt line 1054"
+Regulatory Signature,CD8_Treg1,6,FOXP3;IL2RA;CTLA4;TIGIT;IKZF2;LAG3,Legacy metadata column CD8_Treg1 (seurat_with_TCR_signatures_original.rds)
