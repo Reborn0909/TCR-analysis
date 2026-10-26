@@ -6,8 +6,8 @@
 
 suppressPackageStartupMessages({ library(Seurat); library(data.table) })
 
-OBJ <- Sys.getenv("GHD_OBJECT", "/mnt/f// for GHD/seurat_filtered_newQC.rds")
-OUT <- Sys.getenv("GHD_OUT", "/mnt/f// for GHD/main_figure")
+OBJ <- Sys.getenv("OBJECT", file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
+OUT <- Sys.getenv("SCORES_DIR", "data")
 dir.create(OUT, showWarnings = FALSE, recursive = TRUE)
 
 PANELS <- list(
