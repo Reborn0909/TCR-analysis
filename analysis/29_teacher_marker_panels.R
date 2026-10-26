@@ -7,7 +7,7 @@
 
 
 suppressPackageStartupMessages({library(Seurat); library(ggplot2); library(dplyr); library(tidyr)})
-setwd("DATA_ROOT")
+setwd(Sys.getenv("DATA_ROOT", "."))
 OUT <- "figures/teacher_panels"; dir.create(OUT, recursive=TRUE, showWarnings=FALSE)
 
 PANELS <- list(
@@ -31,7 +31,7 @@ GRP    <- c("H-Trp","E-Trp","E-DP")
 COND   <- c("SS","Pre-sel","Post-sel")
 HEAT   <- c("#D4CFC5","#B5C1B4","#8C5A5A")
 
-o <- readRDS("DATA_ROOT")
+o <- readRDS(file.path(Sys.getenv("DATA_ROOT", "."), "seurat_filtered_newQC.rds"))
 o$group <- factor(o$group, levels=GRP)
 o$donor <- unname(ifelse(grepl("-1$", as.character(o$sample)), "Donor 1", "Donor 2"))
 cat("  :", ncol(o), " ·", nrow(o), "\n")
