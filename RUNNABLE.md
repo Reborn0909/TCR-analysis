@@ -85,3 +85,26 @@ Two files from the original collection, `TCR_newQC.R` and `TCR_analysis_plots.R`
 are R console transcripts rather than source files: they contain the `>` and
 `+` prompts and interleaved prose, so they do not parse as R code and are not
 part of this repository.
+
+## Verification record
+
+Every claim above was tested by running the script and inspecting the output.
+
+| Script | Where it ran | Result |
+|---|---|---|
+| `main_figure/02_violin_main_figure.R` | macOS, R 4.6.1 | ran end to end, produced `main_figure_module_scores.png` showing the three panels Exhaustion, Activation/Effector function, Cytotoxicity with SS/Pre-sel/Post-sel labels and significance brackets |
+| `analysis/21_panels_english.R` | macOS and Linux, R 4.5.2 | produced `P01` to `P04`, 8 files |
+| `analysis/25_exhaustion_marker_figures.R` | macOS | produced `E1` to `E3` |
+| `analysis/22_volcano_redraw.R` | macOS | produced the E-Trp vs H-Trp volcano |
+| `analysis/20_panels_changed_new.R` | macOS | fails on the Windows font `msyh.ttc`; expected, platform specific |
+| `analysis/28_heatmap_morandi.R` | macOS | needs its expression matrix input |
+| `analysis/30_teacher_panels_extended.R` | macOS | needs the Seurat object |
+| `analysis/32_verify_panel_numbers.R` | macOS | needs the Seurat object |
+
+`data/per_cell_scores.csv.gz` (2.4 MB, 76,366 cells) is included, so the main
+figure runs from this repository without any external file. Only the two
+plots that need the full Seurat object still require `DATA_ROOT`.
+
+PDF output from `02_violin_main_figure.R` needs a Cairo-capable device; on a
+system without one the PNG is written and the PDF step fails. Set
+`SCORES_DIR` to redirect the output directory.
