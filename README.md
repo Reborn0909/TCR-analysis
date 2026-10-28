@@ -86,8 +86,9 @@ build the six-signature violin figure from the per-cell module scores.
 `data/signature_gene_sets_ten.csv`  all ten signatures, extracted from
 `original/Table_Signature_Gene_Lists.xlsx`.
 
-The CD8 Trp signature is the five-gene core set HLA-DRA, HLA-DRB1, TIGIT,
-LAG3, CD74 (Guo et al., Advanced Science 2024).
+The CD8 Trp signature is the 50-gene panel listed in Supplementary Table 4
+(recipe key 384), computed with AddModuleScore on the RNA assay. The
+authoritative group values are in `data/six_scores_FINAL_by_group.csv`.
 
 Scoring: `Seurat::AddModuleScore(assay = "RNA", nbin = 24, ctrl = 100 ,
 seed = 20261004)`.
@@ -111,6 +112,17 @@ confidence intervals; with two donors no donor-level interval is estimable.
 Two donors. The donor is the biological replicate, so all inference is
 donor-level. Cell-level P values printed on the violin plots are descriptive
 and are not used for any claim of donor-level significance.
+
+## Signature figures
+
+| File | Content |
+|---|---|
+| `figures/S35_violin_6modules_6pages.pdf` | six modules, donor facets, 475 x 244 pt, 6 pages |
+| `figures/S37_violin_6modules_unified_y.pdf` | six modules, unified y axis, 360 x 360 pt, 6 pages |
+| `figures/Fig_All_Functional_Scores_Combined.pdf` | ten-signature combined panel |
+
+All three use the 50-gene CD8 Trp panel and agree with
+`data/six_scores_FINAL_by_group.csv`.
 
 ## What runs
 
