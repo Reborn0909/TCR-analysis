@@ -131,6 +131,36 @@ verified to run with the data included here. Three scripts run end to end from
 this repository alone; the rest need the parent Seurat object, which is not
 distributed because it is 2.48 GB.
 
+
+## Supplementary Table 3
+
+`results/Table_S3_sample_mapping_QC_TCR.csv` is the sample-mapping and
+quality-control summary, rebuilt from two source files that are also included:
+
+- `results/main_preQC_cell_counts.csv` - cells before and after QC per sample
+- `results/main_qc_and_TCR_assignment_audit.csv` - post-QC cells, TCR-assigned
+  cells, median genes, median UMIs and median mitochondrial percentage
+
+| Donor ID | Sample ID | Condition | Cells before QC | Cells after QC | Median genes | Median UMIs | Cells eligible for TCR |
+|---|---|---|---|---|---|---|---|
+| Donor 1 | SS-1 | SS | 14,055 | 13,442 | 1,392 | 3,134.5 | 8,272 |
+| Donor 1 | Pre-sel-1 | Pre-sel | 15,516 | 11,951 | 4,827 | 21,686 | 8,115 |
+| Donor 1 | Post-sel-1 | Post-sel | 17,599 | 13,119 | 5,897 | 28,415 | 10,020 |
+| Donor 2 | SS-2 | SS | 11,604 | 10,454 | 1,439 | 3,280.5 | 6,557 |
+| Donor 2 | Pre-sel-2 | Pre-sel | 15,243 | 13,662 | 4,346 | 17,682 | 10,576 |
+| Donor 2 | Post-sel-2 | Post-sel | 15,556 | 13,738 | 5,180 | 20,834 | 12,262 |
+
+"Cells eligible for TCR analysis" counts post-QC cells carrying a productive
+TRA/TRB contig, that is, the intersection of the productive barcodes in
+`filtered_contig_annotations.csv` with the QC-passing cells in the Seurat
+object. The smallest of these is **6,557**, which is the per-sample cell number
+used for TCR downsampling.
+
+Note: a number of 6,752 has circulated for this quantity. 6,752 is the count of
+productive TRA/TRB barcodes for sample SS-2 *before* intersecting with the
+QC-passing cells; 195 of those barcodes did not survive QC, leaving 6,557
+cells. Only post-QC cells can be downsampled.
+
 ## Integrity
 
 ```bash
