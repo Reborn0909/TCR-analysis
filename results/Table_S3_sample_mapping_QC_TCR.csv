@@ -1,0 +1,7 @@
+Donor ID,Sample ID,Condition,Cells before QC,Cells after QC,Median genes per cell,Median UMIs per cell,Cells eligible for TCR analysis
+Donor 1,SS-1,SS,14055,13442,1392,3134.5,8272
+Donor 1,Pre-sel-1,Pre-sel,15516,11951,4827,21686,8115
+Donor 1,Post-sel-1,Post-sel,17599,13119,5897,28415,10020
+Donor 2,SS-2,SS,11604,10454,1439,3280.5,6557
+Donor 2,Pre-sel-2,Pre-sel,15243,13662,4346,17682,10576
+Donor 2,Post-sel-2,Post-sel,15556,13738,5180,20834,12262
