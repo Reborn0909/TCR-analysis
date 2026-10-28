@@ -1,7 +1,19 @@
-module,score_column,H_Trp_SS,E_Trp_Pre,E_DP_Post,source_object
-Exhaustion Signature,Exhaustion_Full1,-0.169,-0.126,-0.209,seurat_with_TCR_signatures_original.rds
-Activation / Effector Signature,Activation_computed,0.409,-0.086,-0.163,seurat_with_TCR_signatures_original.rds
-Cytotoxicity Signature,Cytotoxicity_computed,0.292,-0.115,-0.227,seurat_with_TCR_signatures_original.rds
-Stemness Signature,Stemness_Score1,-0.360,-0.681,-0.287,seurat_with_TCR_signatures_original.rds
-CD8Trp Signature,CD8_Trp_Score1,0.085,-0.285,0.114,seurat_with_TCR_signatures_original.rds
-Regulatory Signature,CD8_Treg1,-0.429,0.155,-0.309,seurat_with_TCR_signatures_original.rds
+module,group,n,mean,median
+Exhaustion Signature,H-Trp,23896,-0.00768689561021191,-0.0166534155541807
+Exhaustion Signature,E-Trp,25613,-0.0364479321555389,-0.0457305664614429
+Exhaustion Signature,E-DP,26857,-0.0721943453424053,-0.0796820741915367
+Activation / Effector Signature,H-Trp,23896,0.405380025740987,0.40932701576225
+Activation / Effector Signature,E-Trp,25613,-0.0762975965585758,-0.085793418901577
+Activation / Effector Signature,E-DP,26857,-0.154030306988901,-0.163111825313356
+Cytotoxicity Signature,H-Trp,23896,0.271810160345747,0.292401275618541
+Cytotoxicity Signature,E-Trp,25613,-0.11327933028166,-0.115140286220383
+Cytotoxicity Signature,E-DP,26857,-0.214802467524326,-0.226629722419566
+Stemness Signature,H-Trp,23896,-0.134052336199484,-0.178482442217664
+Stemness Signature,E-Trp,25613,-0.452391093837898,-0.464436774600956
+Stemness Signature,E-DP,26857,-0.0365612762755845,-0.0504095166070638
+CD8Trp Signature,H-Trp,23896,0.901638789601187,0.993540684986196
+CD8Trp Signature,E-Trp,25613,0.20899398060594,0.199676415201685
+CD8Trp Signature,E-DP,26857,0.297288524338302,0.291657005754574
+Regulatory Signature,H-Trp,23896,-0.319532308275197,-0.349575611257168
+Regulatory Signature,E-Trp,25613,0.254184487022056,0.249372524930635
+Regulatory Signature,E-DP,26857,-0.140917025608727,-0.160641651659977
